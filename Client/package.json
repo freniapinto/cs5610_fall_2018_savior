@@ -9,13 +9,17 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "^31.0.2",
+    "@mindinventory/react-native-tab-bar-interaction": "github:mindinventory/react-native-tab-bar-interaction",
+    "expo": "31.0.0",
+    "native-base": "^2.8.1",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
     "react-native-easy-grid": "^0.2.0",
     "react-native-elements": "^0.19.1",
     "react-native-icons": "^0.7.1",
     "react-native-maps": "^0.22.1",
+    "react-native-switch": "^1.5.0",
+    "react-native-tabbar-bottom": "^1.0.4",
     "react-native-textinput-effects": "^0.4.2",
     "react-native-vector-icons": "latest",
     "react-navigation": "^3.0.0"

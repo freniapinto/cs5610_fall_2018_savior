@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "savior-webdev-fall18-project",
+    "name": "savior",
     "description": "This project is really great.",
     "slug": "savior-webdev-fall18-project",
     "privacy": "public",
@@ -21,7 +21,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.personal.savior"
     }
   }
 }

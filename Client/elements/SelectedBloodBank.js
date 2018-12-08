@@ -52,7 +52,8 @@ export default class SelectedBloodBank extends Component {
                             <Col size={1}>
                                 <Icon name="star" size={30} color="yellow" style={{padding:30}}/></Col>
                             <Col size={3}>
-                                <Text style ={{color:'black',paddingLeft:60,paddingTop:10,paddingRight:60, fontSize:30}}> {this.state.details.rating} </Text>
+                                <Text style ={{color:'black',paddingLeft:60,paddingTop:10,paddingRight:60, fontSize:30}}>
+                                    {this.state.details.rating} </Text>
                             </Col>
 
                         </Col>

@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7fb35ede-235d-4e60-88b3-5f427bf607db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/elements/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/Profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.expo/packager-info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/BloodBanksNearMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/elements/BloodBanksNearMe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/SelectedBloodBank.js" beforeDir="false" afterPath="$PROJECT_DIR$/elements/SelectedBloodBank.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/@babel/register/.babel.7.1.6.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/@babel/register/.babel.7.1.6.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/runtime/helpers/decorate.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/runtime/helpers/decorate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/runtime/helpers/esm/decorate.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/runtime/helpers/esm/decorate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/runtime/helpers/esm/toPropertyKey.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/runtime/helpers/esm/toPropertyKey.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/runtime/helpers/toPropertyKey.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/runtime/helpers/toPropertyKey.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/runtime/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/runtime/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/build/av/Audio.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/expo/build/av/Audio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/build/av/Audio.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/expo/build/av/Audio.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/build/av/Audio/AudioAvailability.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/build/av/Audio/AudioAvailability.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/build/av/Audio/Recording.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/expo/build/av/Audio/Recording.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/build/av/Audio/Recording.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/expo/build/av/Audio/Recording.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/build/av/Audio/Sound.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/expo/build/av/Audio/Sound.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/build/av/Audio/Sound.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/expo/build/av/Audio/Sound.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/build/effects/LinearGradient.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/expo/build/effects/LinearGradient.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/build/effects/LinearGradient.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/expo/build/effects/LinearGradient.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/build/environment/logging.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/expo/build/environment/logging.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/build/environment/logging.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/expo/build/environment/logging.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/expo/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/src/av/Audio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/expo/src/av/Audio.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/src/av/Audio/AudioAvailability.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/src/av/Audio/Recording.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/expo/src/av/Audio/Recording.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/src/av/Audio/Sound.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/expo/src/av/Audio/Sound.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/src/effects/LinearGradient.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/expo/src/effects/LinearGradient.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/expo/src/environment/logging.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/expo/src/environment/logging.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/qs/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/qs/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/qs/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/qs/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/qs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/qs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/qs/dist/qs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/qs/dist/qs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/qs/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/qs/lib/parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/qs/lib/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/qs/lib/stringify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/qs/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/qs/lib/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/qs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/qs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/qs/test/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/qs/test/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/qs/test/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/qs/test/parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/qs/test/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/qs/test/stringify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/qs/test/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/qs/test/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/.github/ISSUE_TEMPLATE/bug_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/.github/ISSUE_TEMPLATE/feature_request.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/.github/ISSUE_TEMPLATE/support.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-native-vector-icons/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/create-icon-set-from-fontawesome5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/create-icon-set-from-fontello.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/create-icon-set-from-icomoon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/create-icon-set.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/ensure-native-module-available.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/generate-icon-set-from-css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/glyphmaps/FontAwesome5Free.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/glyphmaps/FontAwesome5Free.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/glyphmaps/FontAwesome5Free_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/glyphmaps/FontAwesome5Free_meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/glyphmaps/FontAwesome5Pro.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/glyphmaps/FontAwesome5Pro.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/glyphmaps/FontAwesome5Pro_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/glyphmaps/FontAwesome5Pro_meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/icon-button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/react-native.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/react-native.osx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/tab-bar-item-ios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/dist/toolbar-android.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/fonts.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-native-vector-icons/fonts.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/glyphmaps/FontAwesome5Free.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-native-vector-icons/glyphmaps/FontAwesome5Free.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/glyphmaps/FontAwesome5Free_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-native-vector-icons/glyphmaps/FontAwesome5Free_meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/glyphmaps/FontAwesome5Pro.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-native-vector-icons/glyphmaps/FontAwesome5Pro.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/glyphmaps/FontAwesome5Pro_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-native-vector-icons/glyphmaps/FontAwesome5Pro_meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-native-vector-icons/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/scripts/antdesign.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/scripts/build-icons.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/scripts/entypo.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/scripts/evilicons.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/scripts/feather.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/scripts/fontawesome.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/scripts/fontawesome5.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/scripts/foundation.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/scripts/ionicons.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/scripts/materialcommunityicons.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/scripts/materialicons.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/scripts/octicons.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/scripts/simplelineicons.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native-vector-icons/scripts/zocial.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-561479821">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="js" value="21" />
+          <entry key="json" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSON" value="8" />
+          <entry key="JavaScript" value="21" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="3102" />
+          <entry key="json" value="39" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JSON" value="39" />
+          <entry key="JavaScript" value="3102" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#1390#2665#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/elements/Register.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="161" column="29" lean-forward="true" selection-start-line="161" selection-start-column="29" selection-end-line="161" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#703#7085#0" />
+                <element signature="e#4830#6607#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/elements/Login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="63" selection-start-line="63" selection-end-line="75" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/elements/Profile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="45" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/elements/SelectedBloodBank.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/elements/BloodBanksNearMe.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="51" column="38" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>width</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/babel.config.js" />
+        <option value="$PROJECT_DIR$/app.json" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/elements/profile.js" />
+        <option value="$PROJECT_DIR$/elements/BloodBanksNearMe.js" />
+        <option value="$PROJECT_DIR$/elements/SelectedBloodBank.js" />
+        <option value="$PROJECT_DIR$/App.js" />
+        <option value="$PROJECT_DIR$/elements/Profile.js" />
+        <option value="$PROJECT_DIR$/elements/Login.js" />
+        <option value="$PROJECT_DIR$/Home.js" />
+        <option value="$PROJECT_DIR$/elements/Register.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name=".expo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="elements" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7fb35ede-235d-4e60-88b3-5f427bf607db" name="Default Changelist" comment="" />
+      <created>1544164760469</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544164760469</updated>
+      <workItem from="1544164762460" duration="25000" />
+      <workItem from="1544214136047" duration="3275000" />
+      <workItem from="1544228433742" duration="24187000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="27487000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29503545" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/react-native-drawer/examples/RNDrawerDemo/ControlPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.expo/packager-info.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.expo/settings.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="160" column="24" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elements/FixedHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/babel.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elements/Place.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="8" column="72" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native/jest/mockComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-navigation/src/react-navigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="105" column="6" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/BloodBanksNearby.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elements/BloodBanksNearMe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="51" column="38" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#1390#2665#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elements/SelectedBloodBank.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/Components/ScrollView/ScrollView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1488">
+          <caret line="210" column="18" lean-forward="true" selection-start-line="210" selection-start-column="18" selection-end-line="210" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native-switch/lib/Switch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/react-native/react-native-implementation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1631">
+          <caret line="87" column="51" lean-forward="true" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elements/Profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elements/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="63" selection-start-line="63" selection-end-line="75" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elements/Register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="161" column="29" lean-forward="true" selection-start-line="161" selection-start-column="29" selection-end-line="161" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#703#7085#0" />
+            <element signature="e#4830#6607#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

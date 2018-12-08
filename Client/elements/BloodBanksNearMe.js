@@ -3,10 +3,8 @@ import BloodBanksNearby from "../services/BloodBanksNearby";
 import Place from "../elements/Place";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Fumi } from 'react-native-textinput-effects';
-import {View,Alert, Text, ListView, StyleSheet,TouchableHighlight} from "react-native"
+import {View, Alert, Text, ListView, StyleSheet, TouchableHighlight, TextInput} from "react-native"
 import { Col, Row, Grid } from "react-native-easy-grid";
-import Kohana from "react-native-textinput-effects/lib/Kohana";
-import Makiko from "react-native-textinput-effects/lib/Makiko";
 import Hideo from "react-native-textinput-effects/lib/Hideo";
 
 var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2})
@@ -67,9 +65,8 @@ export default class BloodBanksNearMe extends Component {
                         iconColor={'white'}
                         value ={this.state.location}
                         clearTextOnFocus={true}
-                        // this is used as backgroundColor of icon container view.
                         iconBackgroundColor={'#d32f2f'}
-                        inputStyle={{ color: '#d32f2f',borderBottomColor: '#d32f2f',borderBottomWidth: 2 }}
+                        inputStyle={{ color: '#d32f2f',borderBottomColor: '#d32f2f',borderBottomWidth: 3 }}
                     />
                     <ListView
                         style={{marginTop: 60}}
