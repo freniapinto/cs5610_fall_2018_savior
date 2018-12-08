@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@mindinventory/react-native-tab-bar-interaction": "github:mindinventory/react-native-tab-bar-interaction",
-    "expo": "31.0.0",
+    "expo": "^31.0.0",
     "native-base": "^2.8.1",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
