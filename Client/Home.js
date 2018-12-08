@@ -34,6 +34,13 @@ export default class Home extends React.Component {
        this.setState({registering:true})
     }
 
+    registerUser = (user) => {
+
+        this.setState({
+            loggedIn:true,
+            registering:true})
+    }
+
 
     render() {
 
@@ -68,6 +75,7 @@ export default class Home extends React.Component {
                 </View>}
                 {this.state.page === "Fav" && <Text>Screen2</Text>}
                 {this.state.page === "ProfileScreen" && <Profile
+                                                            registerUser = {this.registerUser}
                                                             navigateToRegister={this.navigateToRegister}
                                                             registering={this.state.registering}
                                                             loggedIn={this.state.loggedIn} login={this.login}/>}

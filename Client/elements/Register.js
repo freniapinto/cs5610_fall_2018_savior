@@ -13,8 +13,46 @@ export default class Register extends Component {
         this.state = {
             bloodBank:false,
             nextScreen:false,
+            tattoo_piercing:false,
+            treatment:false,
+            username:'',
+            password:'',
+            firstName:'',lastDonate:'',
+            lastName:'',address:'',city:'',
+            contact:'',email:'',age:'',gender:'',
+            Aplus:0,Aneg:0,bplus:0,bneg:0,
+            abPlus:0,abNeg:0,oPlus:0,oNeg:0,
+            bloodGroup:'',bloodBankName:''
 
         }
+    }
+
+    createUser = () =>{
+        return ({
+            firstName:this.state.firstName,
+            lastName:this.state.lastName,
+            username:this.state.username,
+            password:this.state.password,
+            age:this.state.age,
+            gender:this.state.gender,
+            contact:this.state.contact,
+            email:this.state.email,
+            address:this.state.address,
+            city:this.state.city,
+            lastDonated: this.state.lastDonate,
+            bloodBank:this.state.bloodBank,
+            bloodBankName:this.state.bloodBankName,
+            bloodGroup:this.state.bloodGroup,
+            tattoo_piercing:this.state.tattoo_piercing,
+            treatment:this.state.treatment,
+            abPlus:this.state.abPlus,
+            abNeg:this.state.abNeg,
+            Aplus:this.state.Aplus,
+            bneg:this.state.bneg,
+            bplus:this.state.bplus,
+            oPlus:this.state.oPlus,
+            oNeg:this.state.oNeg
+        })
     }
     toggleSwitch = () => {
         this.setState({bloodBank:!this.state.bloodBank})
@@ -22,26 +60,27 @@ export default class Register extends Component {
     render(){
         return(
             <ScrollView  >
-                {this.state.nextScreen
+                {!this.state.nextScreen
                     ? <View style={{flex: 1, paddingBottom: '20%'}}>
                         <Text style={{fontSize: 30, textAlign: 'center'}}>Register</Text>
                         <Hoshi
                             label={'First Name'}
-                            // this is used as active border color
+                            onChangeText={(text) => this.setState({firstName:text})}
+                            value={this.state.firstName}
                             borderColor={'#d32f2f'}
                             backgroundColor={'#F9F7F6'}
                             style={{marginTop: 15}}/>
                         <Hoshi
                             label={'Last Name'}
-                            // this is used as active border color
+                            onChangeText={(text) => this.setState({lastName:text})}
+                            value={this.state.lastName}
                             borderColor={'#d32f2f'}
-                            // this is used to set backgroundColor of label mask.
-                            // please pass the backgroundColor of    your TextInput container.
                             backgroundColor={'#F9F7F6'}
                             style={{marginTop: 15}}/>
                         <Hoshi
                             label={'Username'}
-                            // this is used as active border color
+                            onChangeText={(text) => this.setState({username:text})}
+                            value={this.state.username}
                             borderColor={'#d32f2f'}
                             // this is used to set backgroundColor of label mask.
                             // please pass the backgroundColor of    your TextInput container.
@@ -49,34 +88,35 @@ export default class Register extends Component {
                             style={{marginTop: 15}}/>
                         <Hoshi
                             label={'Password'}
+                            onChangeText={(text) => this.setState({password:text})}
+                            value={this.state.password}
                             borderColor={'#d32f2f'}
                             backgroundColor={'#F9F7F6'}
                             style={{marginTop: 15}}/>
                         <Hoshi
                             label={'Address'}
-                            // this is used as active border color
                             borderColor={'#d32f2f'}
-                            // this is used to set backgroundColor of label mask.
-                            // please pass the backgroundColor of    your TextInput container.
+                            onChangeText={(text) => this.setState({address:text})}
+                            value={this.state.address}
                             backgroundColor={'#F9F7F6'}
                             style={{marginTop: 15}}/>
                         <Hoshi
                             label={'City'}
-                            // this is used as active border color
+                            onChange={(text) => this.setState({city:text})}
+                            value={this.state.city}
                             borderColor={'#d32f2f'}
-                            // this is used to set backgroundColor of label mask.
-                            // please pass the backgroundColor of    your TextInput container.
                             backgroundColor={'#F9F7F6'}
                             style={{marginTop: 15}}/>
                         <Hoshi
                             label={'Contact'}
-                            // this is used as active border color
+                            onChangeText={(text) => this.setState({contact:text})}
+                            value={this.state.contact}
                             borderColor={'#d32f2f'}
-                            // this is used to set backgroundColor of label mask.
-                            // please pass the backgroundColor of    your TextInput container.
                             backgroundColor={'#F9F7F6'}
                             style={{marginTop: 15}}/>
                         <Hoshi
+                            onChangeText={(text) => this.setState({address:text})}
+                            value={this.state.address}
                             label={'Email Address'}
                             borderColor={'#d32f2f'}
                             backgroundColor={'#F9F7F6'}
@@ -85,6 +125,8 @@ export default class Register extends Component {
                             <Col style={{paddingRight: 20}}>
                                 <Hoshi
                                     label={'Age'}
+                                    onChangeText={(text) => this.setState({age:text})}
+                                    value={this.state.age}
                                     borderColor={'#d32f2f'}
                                     backgroundColor={'#F9F7F6'}
                                     style={{marginTop: 15}}/>
@@ -92,6 +134,8 @@ export default class Register extends Component {
                             <Col>
                                 <Hoshi
                                     label={'Gender'}
+                                    onChangeText={(text) => this.setState({gender:text})}
+                                    value={this.state.gender}
                                     borderColor={'#d32f2f'}
                                     backgroundColor={'#F9F7F6'}
                                     style={{marginTop: 15}}/>
@@ -133,7 +177,7 @@ export default class Register extends Component {
                         <TouchableHighlight
                             underlayColor={'#0693e3'}
                             activeOpacity={0.5}
-                            onPress={() => this.setState({nextScreen: this.state.nextScreen})}
+                            onPress={() => this.setState({nextScreen: !this.state.nextScreen})}
                             style={styles.button}>
                             <Text style={{color: 'white', fontSize: 20}}> Next </Text>
                         </TouchableHighlight>
@@ -143,23 +187,199 @@ export default class Register extends Component {
                     : <View style={{flex: 1, paddingBottom: '20%'}}>
                         {this.state.bloodBank
                             ?<View>
-                            <Text style={{fontSize: 30, textAlign: 'center'}}>Register</Text>
-                            <Hoshi
-                                label={'First Name'}
-                                // this is used as active border color
-                                borderColor={'#d32f2f'}
-                                backgroundColor={'#F9F7F6'}
-                                style={{marginTop: 15}}/>
-                            <Hoshi
-                                label={'Last Name'}
-                                // this is used as active border color
-                                borderColor={'#d32f2f'}
-                                // this is used to set backgroundColor of label mask.
-                                // please pass the backgroundColor of    your TextInput container.
-                                backgroundColor={'#F9F7F6'}
-                                style={{marginTop: 15}}/>
-                        </View>
-                            :}
+                                <Text style={{fontSize: 20, textAlign: 'center'}}>Enter the availability of blood stocks at your Bank</Text>
+                                <Hoshi
+                                    onChangeText={(text) => this.setState({bloodBankName:text})}
+                                    value={this.state.bloodBankName}
+                                    label={'Blood Bank Name'}
+                                    borderColor={'#d32f2f'}
+                                    backgroundColor={'#F9F7F6'}
+                                    style={{marginTop: 15}}/>
+                                <Row>
+                                    <Col style={{paddingRight: 20}}>
+                                        <Hoshi
+                                            onChangeText={(text) => this.setState({Aplus:text})}
+                                            value={this.state.Aplus}
+                                            label={'A+'}
+                                            borderColor={'#d32f2f'}
+                                            backgroundColor={'#F9F7F6'}
+                                            style={{marginTop: 15}}/>
+                                    </Col>
+                                    <Col>
+                                        <Hoshi
+                                            onChangeText={(text) => this.setState({Aneg:text})}
+                                            value={this.state.Aneg}
+                                            label={'A-'}
+                                            borderColor={'#d32f2f'}
+                                            backgroundColor={'#F9F7F6'}
+                                            style={{marginTop: 15}}/>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col style={{paddingRight: 20}}>
+                                        <Hoshi
+                                            onChangeText={(text) => this.setState({bplus:text})}
+                                            value={this.state.bplus}
+                                            label={'B+'}
+                                            borderColor={'#d32f2f'}
+                                            backgroundColor={'#F9F7F6'}
+                                            style={{marginTop: 15}}/>
+                                    </Col>
+                                    <Col>
+                                        <Hoshi
+                                            onChangeText={(text) => this.setState({bneg:text})}
+                                            value={this.state.bneg}
+                                            label={'B-'}
+                                            borderColor={'#d32f2f'}
+                                            backgroundColor={'#F9F7F6'}
+                                            style={{marginTop: 15}}/>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col style={{paddingRight: 20}}>
+                                        <Hoshi
+                                            onChangeText={(text) => this.setState({abPlus:text})}
+                                            value={this.state.abPlus}
+                                            label={'AB+'}
+                                            borderColor={'#d32f2f'}
+                                            backgroundColor={'#F9F7F6'}
+                                            style={{marginTop: 15}}/>
+                                    </Col>
+                                    <Col>
+                                        <Hoshi
+                                            onChangeText={(text) => this.setState({abNeg:text})}
+                                            value={this.state.abNeg}
+                                            label={'AB+'}
+                                            borderColor={'#d32f2f'}
+                                            backgroundColor={'#F9F7F6'}
+                                            style={{marginTop: 15}}/>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col style={{paddingRight: 20}}>
+                                        <Hoshi
+                                            onChangeText={(text) => this.setState({oPlus:text})}
+                                            value={this.state.oPlus}
+                                            label={'O+'}
+                                            borderColor={'#d32f2f'}
+                                            backgroundColor={'#F9F7F6'}
+                                            style={{marginTop: 15}}/>
+                                    </Col>
+                                    <Col>
+                                        <Hoshi
+                                            onChangeText={(text) => this.setState({oNeg:text})}
+                                            value={this.state.oNeg}
+                                            label={'O-'}
+                                            borderColor={'#d32f2f'}
+                                            backgroundColor={'#F9F7F6'}
+                                            style={{marginTop: 15}}/>
+                                    </Col>
+                                </Row>
+                                <TouchableHighlight
+                                    underlayColor={'#0693e3'}
+                                    activeOpacity={0.5}
+                                    onPress={() => this.props.registerUser(this.createUser())}
+                                    style={styles.button}>
+                                    <Text style={{color: 'white', fontSize: 20}}> Done </Text>
+                                </TouchableHighlight>
+                            </View>
+                            :<View>
+                                <Text style={{fontSize: 20, textAlign: 'center'}}>
+                                    Additional Details to help you/other find Donor sooner</Text>
+                                <Row>
+                                    <Col style={{paddingRight: 20}}>
+                                        <Hoshi
+                                            onChangeText={(text) => this.setState({bloodGroup:text})}
+                                            value={this.state.bloodGroup}
+                                            label={'Blood Group'}
+                                            borderColor={'#d32f2f'}
+                                            backgroundColor={'#F9F7F6'}
+                                            style={{marginTop: 15}}/>
+                                    </Col>
+                                    <Col>
+                                        <Hoshi
+                                            onChangeText={(text) => this.setState({lastDonated:text})}
+                                            value={this.state.lastDonate}
+                                            label={'Last Donated'}
+                                            borderColor={'#d32f2f'}
+                                            backgroundColor={'#F9F7F6'}
+                                            style={{marginTop: 15}}/>
+                                    </Col>
+                                </Row>
+                                <Row style={{margin: 15, marginTop: 20}}>
+                                    <Col style={{paddingRight: 15}}>
+                                        <Text style={{fontSize: 20}}>Do you have any Tatto/piercing? </Text>
+                                    </Col>
+                                    <Col>
+                                        <Switch
+                                            value={this.state.tattoo_piercing}
+                                            onValueChange={() => this.setState({tattoo_piercing:!this.state.tattoo_piercing})}
+                                            disabled={false}
+                                            activeText={"Donor"}
+                                            inActiveText={'BloodBank'}
+                                            circleSize={40}
+                                            barHeight={40}
+                                            backgroundInactive={'#d32f2f'}
+                                            circleBorderWidth={2}
+                                            circleActiveColor={'#30a566'}
+                                            circleInActiveColor={'#d32f2f'}
+                                            changeValueImmediately={true}
+                                            changeValueImmediately={true} // if rendering inside circle, change state immediately or wait for animation to complete
+                                            innerCircleStyle={{
+                                                alignItems: "center",
+                                                justifyContent: "center"
+                                            }} // style for inner animated circle for what you (may) be rendering inside the circle
+                                            outerCircleStyle={{}} // style for outer animated circle
+                                            renderActiveText={false}
+                                            renderInActiveText={false}
+
+                                            switchLeftPx={1} // denominator for logic when sliding to TRUE position. Higher number = more space from RIGHT of the circle to END of the slider
+                                            switchRightPx={1} // denominator for logic when sliding to FALSE position. Higher number = more space from LEFT of the circle to BEGINNING of the slider
+                                            switchWidthMultiplier={3} // multipled by the `circleSize` prop to calculate total width of the Switch
+                                        />
+                                    </Col>
+                                </Row>
+                                <Row style={{margin: 15, marginTop: 20}}>
+                                    <Col style={{paddingRight: 15}}>
+                                        <Text style={{fontSize: 20}}>Are you undergoing any treatment? </Text>
+                                    </Col>
+                                    <Col>
+                                        <Switch
+                                            value={this.state.treatment}
+                                            onValueChange={() => this.setState({treatment:!this.state.treatment})}
+                                            disabled={false}
+                                            activeText={"Donor"}
+                                            inActiveText={'BloodBank'}
+                                            circleSize={40}
+                                            barHeight={40}
+                                            backgroundInactive={'#d32f2f'}
+                                            circleBorderWidth={2}
+                                            circleActiveColor={'#30a566'}
+                                            circleInActiveColor={'#d32f2f'}
+                                            changeValueImmediately={true}
+                                            changeValueImmediately={true} // if rendering inside circle, change state immediately or wait for animation to complete
+                                            innerCircleStyle={{
+                                                alignItems: "center",
+                                                justifyContent: "center"
+                                            }} // style for inner animated circle for what you (may) be rendering inside the circle
+                                            outerCircleStyle={{}} // style for outer animated circle
+                                            renderActiveText={false}
+                                            renderInActiveText={false}
+
+                                            switchLeftPx={1} // denominator for logic when sliding to TRUE position. Higher number = more space from RIGHT of the circle to END of the slider
+                                            switchRightPx={1} // denominator for logic when sliding to FALSE position. Higher number = more space from LEFT of the circle to BEGINNING of the slider
+                                            switchWidthMultiplier={3} // multipled by the `circleSize` prop to calculate total width of the Switch
+                                        />
+                                    </Col>
+                                </Row>
+                                <TouchableHighlight
+                                    underlayColor={'#0693e3'}
+                                    activeOpacity={0.5}
+                                    onPress={() => this.props.registerUser(this.createUser())}
+                                    style = {styles.button}>
+                                    <Text style={{color: 'white', fontSize: 20}}> Done </Text>
+                                </TouchableHighlight>
+                            </View>}
                     </View>
                 }
 
@@ -169,12 +389,9 @@ export default class Register extends Component {
     }
 }
 const styles = StyleSheet.create({
-
-
     button: {
         alignItems: 'center',
         backgroundColor: '#0693e3',
         padding: 10,
         marginTop:10,
-        marginLeft: 5},
-});
+        marginLeft: 5},});
