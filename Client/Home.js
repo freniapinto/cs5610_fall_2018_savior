@@ -7,6 +7,7 @@ import Profile from './elements/Profile'
 import Tabbar from "react-native-tabbar-bottom";
 import {createStackNavigator} from "react-navigation";
 import Register from "./elements/Register";
+import PostForm from "./elements/PostForm";
 
 export default class Home extends React.Component {
 
@@ -79,7 +80,7 @@ export default class Home extends React.Component {
                                                             navigateToRegister={this.navigateToRegister}
                                                             registering={this.state.registering}
                                                             loggedIn={this.state.loggedIn} login={this.login}/>}
-                {this.state.page === "Post" && <Text>Screen4</Text>}
+                {this.state.page === "Post" && <PostForm/>}
                 {this.state.page === "SearchScreen" && <Text>Screen5</Text>}
 
                 <Tabbar
