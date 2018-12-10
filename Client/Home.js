@@ -8,6 +8,7 @@ import Tabbar from "react-native-tabbar-bottom";
 import {createStackNavigator} from "react-navigation";
 import Register from "./elements/Register";
 import PostForm from "./elements/PostForm";
+import Favorites from "./elements/Favorites";
 
 export default class Home extends React.Component {
 
@@ -24,22 +25,48 @@ export default class Home extends React.Component {
             page: "HomeScreen",
             loggedIn:false,
             registering:false,
+            user : {},
+            anonUser:true
         }
     }
     login = (username,password) =>{
-        this.setState({loggedIn:true})
-        alert(username+" "+password)
+        fetch('https://blooming-castle-18974.herokuapp.com/savior/login',{
+            credentials: 'include', method: 'POST',
+            headers:{
+                'Content-Type': 'application/json'
+            },
+            body:JSON.stringify({username:username,password:password})
+        }).then(response=> response.json())
+            .then(user => this.setState({loggedIn:true, user:user[0],anonUser:false}))
+
     }
+
 
     navigateToRegister =() =>{
        this.setState({registering:true})
     }
 
     registerUser = (user) => {
+        console.log(user)
+        fetch('https://blooming-castle-18974.herokuapp.com/savior/register',{
+            credentials: 'include', method: 'POST',
+            headers:{
+                'Content-Type': 'application/json'
+            },
+            body:JSON.stringify(user)
+        }).
+        then(this.setState({registering:false}))
+    }
 
-        this.setState({
-            loggedIn:true,
-            registering:true})
+    postComment = (post) =>  {
+        console.log(JSON.stringify(post))
+        fetch('https://blooming-castle-18974.herokuapp.com/savior/post',{
+            credentials: 'include', method: 'POST',
+            headers:{
+                'Content-Type': 'application/json'
+            },
+            body:JSON.stringify(post)
+        }).then(response=> console.log(response)).then(this.setState({page:"HomeScreen"}))
     }
 
 
@@ -57,7 +84,7 @@ export default class Home extends React.Component {
                     <Grid >
                         <Row>
                             <Col style={styles.gridbackground}
-                                 onPress = {() => this.props.navigation.navigate('BloodBanksNearMe')}>
+                                 onPress = {() => this.props.navigation.navigate('BloodBanksNearMe',{userId: this.state.user._id})}>
                                 <Text style={{marginTop:'50%',marginLeft:10,color:'white',fontSize:30}}>Blood Banks Near Me</Text>
                             </Col>
                             <Col style={styles.gridbackground}>
@@ -68,20 +95,38 @@ export default class Home extends React.Component {
                             <Col style={styles.gridbackground}>
                                 <Text style={{marginTop:'50%',marginLeft:10,color:'white',fontSize:30}}>Blood Stocks</Text>
                             </Col>
-                            <Col style={styles.gridbackground}>
+                            <Col style={styles.gridbackground}
+                                 onPress = {() => this.props.navigation.navigate('Community',{userId: this.state.user._id})}>
                                 <Text style={{marginTop:'50%',marginLeft:10,color:'white',fontSize:30}}>Community</Text>
                             </Col>
                         </Row>
                     </Grid>
                 </View>}
-                {this.state.page === "Fav" && <Text>Screen2</Text>}
-                {this.state.page === "ProfileScreen" && <Profile
+                {(this.state.page === "Fav" && this.state.loggedIn) && <Favorites/>}
+                {this.state.page === "ProfileScreen" && <Profile user = {this.state.user}
                                                             registerUser = {this.registerUser}
                                                             navigateToRegister={this.navigateToRegister}
                                                             registering={this.state.registering}
                                                             loggedIn={this.state.loggedIn} login={this.login}/>}
-                {this.state.page === "Post" && <PostForm/>}
-                {this.state.page === "SearchScreen" && <Text>Screen5</Text>}
+
+                {(this.state.page === "Post" && this.state.loggedIn ) && <PostForm postComment = {this.postComment}
+                                                         user = {this.state.user}/>}
+
+                {(this.state.page === "Post"&& !this.state.loggedIn)  && <Profile user = {this.state.user}
+                                                                                  anonUser={this.state.anonUser}
+                                                                 registerUser = {this.registerUser}
+                                                                 navigateToRegister={this.navigateToRegister}
+                                                                 registering={this.state.registering}
+                                                                 loggedIn={this.state.loggedIn} login={this.login}/>}
+
+                {(this.state.page === "Fav"&& !this.state.loggedIn)  && <Profile user = {this.state.user}
+                                                                                  anonUser={this.state.anonUser}
+                                                                                  registerUser = {this.registerUser}
+                                                                                  navigateToRegister={this.navigateToRegister}
+                                                                                  registering={this.state.registering}
+                                                                                  loggedIn={this.state.loggedIn} login={this.login}/>}
+
+
 
                 <Tabbar
                     stateFunc={(tab) => {
@@ -91,7 +136,6 @@ export default class Home extends React.Component {
                     tabbarBgColor='#d32f2f'
                     activePage={this.state.page}
                     tabs={[
-
                         {
                             page: "Fav",
                             icon: "md-heart",

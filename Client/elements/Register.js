@@ -22,37 +22,60 @@ export default class Register extends Component {
             contact:'',email:'',age:'',gender:'',
             Aplus:0,Aneg:0,bplus:0,bneg:0,
             abPlus:0,abNeg:0,oPlus:0,oNeg:0,
-            bloodGroup:'',bloodBankName:''
+            bloodGroup:'',
+            bloodBankName:''
 
         }
     }
 
     createUser = () =>{
-        return ({
-            firstName:this.state.firstName,
-            lastName:this.state.lastName,
-            username:this.state.username,
-            password:this.state.password,
-            age:this.state.age,
-            gender:this.state.gender,
-            contact:this.state.contact,
-            email:this.state.email,
-            address:this.state.address,
-            city:this.state.city,
-            lastDonated: this.state.lastDonate,
-            bloodBank:this.state.bloodBank,
-            bloodBankName:this.state.bloodBankName,
-            bloodGroup:this.state.bloodGroup,
-            tattoo_piercing:this.state.tattoo_piercing,
-            treatment:this.state.treatment,
-            abPlus:this.state.abPlus,
-            abNeg:this.state.abNeg,
-            Aplus:this.state.Aplus,
-            bneg:this.state.bneg,
-            bplus:this.state.bplus,
-            oPlus:this.state.oPlus,
-            oNeg:this.state.oNeg
-        })
+
+        if(!this.state.bloodBank){
+            return ({
+                first_name:this.state.firstName,
+                last_name:this.state.lastName,
+                username:this.state.username,
+                password:this.state.password,
+                age:this.state.age,
+                gender:this.state.gender,
+                contact:this.state.contact,
+                emailId:this.state.email,
+                address:this.state.address,
+                city:this.state.city,
+                type:"DONOR",
+                donor: {
+                    blood_group:this.state.bloodGroup,
+                    last_donated: this.state.lastDonate,
+                    tattoo_piercing:this.state.tattoo_piercing.toString(),
+                    undergoing_treatment:this.state.treatment,
+                }
+            })}
+            else{
+            return ({
+                firstName: this.state.firstName,
+                lastName: this.state.lastName,
+                username: this.state.username,
+                password: this.state.password,
+                age: this.state.age,
+                gender: this.state.gender,
+                contact: this.state.contact,
+                email: this.state.email,
+                address: this.state.address,
+                city: this.state.city,
+                type: "BLOOD_BANK",
+                bloodBank: {
+                    blood_bank_name: this.state.bloodBankName,
+                    ab_plus: this.state.abPlus,
+                    ab_minus: this.state.abNeg,
+                    a_plus: this.state.Aplus,
+                    a_minus:this.state.Aneg,
+                    b_minus: this.state.bneg,
+                    b_plus: this.state.bplus,
+                    o_plus: this.state.oPlus,
+                    o_minus: this.state.oNeg
+                }
+            })}
+
     }
     toggleSwitch = () => {
         this.setState({bloodBank:!this.state.bloodBank})
@@ -102,7 +125,7 @@ export default class Register extends Component {
                             style={{marginTop: 15}}/>
                         <Hoshi
                             label={'City'}
-                            onChange={(text) => this.setState({city:text})}
+                            onChangeText={(text) => this.setState({city:text})}
                             value={this.state.city}
                             borderColor={'#d32f2f'}
                             backgroundColor={'#F9F7F6'}
@@ -115,8 +138,8 @@ export default class Register extends Component {
                             backgroundColor={'#F9F7F6'}
                             style={{marginTop: 15}}/>
                         <Hoshi
-                            onChangeText={(text) => this.setState({address:text})}
-                            value={this.state.address}
+                            onChangeText={(text) => this.setState({email:text})}
+                            value={this.state.email}
                             label={'Email Address'}
                             borderColor={'#d32f2f'}
                             backgroundColor={'#F9F7F6'}

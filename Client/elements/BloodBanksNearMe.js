@@ -31,27 +31,41 @@ export default class BloodBanksNearMe extends Component {
                 }))
     }
 
-
+    addFav = (bank) =>{
+        let bankObj = {name:bank.name,
+            address:bank.formatted_address,
+            contact:bank.formatted_phone_number,
+            donor:this.props.navigation.getParam('userId', 'defValue')
+        }
+        console.log(JSON.stringify(bankObj))
+        fetch("https://blooming-castle-18974.herokuapp.com/savior/favourite",{
+            credentials: 'include', method: 'POST',
+            headers:{
+                'Content-Type': 'application/json'
+            },
+            body:JSON.stringify(bankObj)
+        }).then(response => console.log(response))
+    }
     renderRow = (rowData) => {
         return(
-
-
                     <Row   style={styles.rowView}>
                         <Col size={10}>
                             <Icon name="tint" size={30} color="#d32f2f" />
                         </Col>
-                        <Col size={90}  onPress={this.navigateToDetailPage.bind(this,rowData.place_id)}>
+                        <Col size={80}  >
                             <Text>{rowData.name}</Text>
+                        </Col>
+                        <Col size={10}>
+                            {this.props.navigation.getParam('userId', 'defValue') ?
+                                <Icon name="heart" size={20} color="#FFC107"
+                                onPress={() => this.addFav(rowData)}/>
+                                :null}
                         </Col>
                     </Row>
 
-
         )
     }
-    navigateToDetailPage = (placeId) =>{
-        this.props.navigation.navigate('SelectedBloodBank', {placeId: placeId, city: this.state.location})
 
-    }
     render() {
 
 

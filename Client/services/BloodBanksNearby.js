@@ -1,4 +1,4 @@
-const URL = 'http://localhost:4000/banks/'
+const URL = 'https://blooming-castle-18974.herokuapp.com/banks/'
 
 export default class BloodBanksNearby {
     static findAllBloodBanks = keyword => {
