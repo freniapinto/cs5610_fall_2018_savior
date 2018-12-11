@@ -73,6 +73,13 @@ export default class Profile extends Component {
                 <Text style={styles.description}>{this.props.user.address}</Text>
                 <Text style={styles.description}><Icon name="phone-square" size={18} color="green"/> &nbsp;&nbsp;
                     {this.props.user.contact}</Text>
+                <TouchableHighlight
+                    underlayColor={'#0693e3'}
+                    onPress={() => this.props.logOut()}
+                    activeOpacity={0.5}
+                    style = {{  backgroundColor: '#d32f2f',marginTop:"15%"}}>
+                    <Text style={{color: 'white', fontSize: 20}}> Log Out </Text>
+                </TouchableHighlight>
             </View>
         )
     }
@@ -123,6 +130,13 @@ export default class Profile extends Component {
                     activeOpacity={0.5}
                     style = {{  backgroundColor: '#0693e3',marginTop:"15%"}}>
                     <Text style={{color: 'white', fontSize: 20}}> Update Stocks </Text>
+                </TouchableHighlight>
+                <TouchableHighlight
+                    underlayColor={'#0693e3'}
+                    onPress={() => this.props.logOut()}
+                    activeOpacity={0.5}
+                    style = {{  backgroundColor: '#d32f2f',marginTop:"15%"}}>
+                    <Text style={{color: 'white', fontSize: 20}}> Log Out </Text>
                 </TouchableHighlight>
             </View>
         )

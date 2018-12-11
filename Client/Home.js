@@ -29,6 +29,17 @@ export default class Home extends React.Component {
             anonUser:true
         }
     }
+    logOut=()=>{
+
+                this.setState({
+                    page: "HomeScreen",
+                    loggedIn:false,
+                    registering:false,
+                    user : {},
+                    anonUser:true,
+                    adminAdd:false,
+                })
+    }
     login = (username,password) =>{
         fetch('https://blooming-castle-18974.herokuapp.com/savior/login',{
             credentials: 'include', method: 'POST',
@@ -104,8 +115,9 @@ export default class Home extends React.Component {
                         </Row>
                     </Grid>
                 </View>}
-                {(this.state.page === "Fav" && this.state.loggedIn) && <Favorites/>}
+                {(this.state.page === "Fav" && this.state.loggedIn) && <Favorites user={this.state.user}/>}
                 {this.state.page === "ProfileScreen" && <Profile user = {this.state.user}
+                                                                 logOut={this.logOut}
                                                             registerUser = {this.registerUser}
                                                             navigateToRegister={this.navigateToRegister}
                                                             registering={this.state.registering}
@@ -115,6 +127,7 @@ export default class Home extends React.Component {
                                                          user = {this.state.user}/>}
 
                 {(this.state.page === "Post"&& !this.state.loggedIn)  && <Profile user = {this.state.user}
+                                                                                  logOut={this.logOut}
                                                                                   anonUser={this.state.anonUser}
                                                                  registerUser = {this.registerUser}
                                                                  navigateToRegister={this.navigateToRegister}
@@ -122,6 +135,7 @@ export default class Home extends React.Component {
                                                                  loggedIn={this.state.loggedIn} login={this.login}/>}
 
                 {(this.state.page === "Fav"&& !this.state.loggedIn)  && <Profile user = {this.state.user}
+                                                                                 logOut={this.logOut}
                                                                                   anonUser={this.state.anonUser}
                                                                                   registerUser = {this.registerUser}
                                                                                   navigateToRegister={this.navigateToRegister}

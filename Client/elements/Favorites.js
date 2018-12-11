@@ -24,7 +24,7 @@ export default class Favorites extends Component{
     }
 
     findFavs= () => {
-        fetch("https://blooming-castle-18974.herokuapp.com/savior/favourite/all",{
+        fetch("https://blooming-castle-18974.herokuapp.com/savior/favourite/all/"+this.props.user._id,{
             method: 'GET',
             credentials: "include",
             body: null,
