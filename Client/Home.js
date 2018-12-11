@@ -87,12 +87,14 @@ export default class Home extends React.Component {
                                  onPress = {() => this.props.navigation.navigate('BloodBanksNearMe',{userId: this.state.user._id})}>
                                 <Text style={{marginTop:'50%',marginLeft:10,color:'white',fontSize:30}}>Blood Banks Near Me</Text>
                             </Col>
-                            <Col style={styles.gridbackground}>
+                            <Col style={styles.gridbackground}
+                                 onPress = {() => this.props.navigation.navigate('DonorsNearMe')}>
                                 <Text style={{marginTop:'50%',marginLeft:10,color:'white',fontSize:30}}>Donors Near Me</Text>
                             </Col>
                         </Row>
                         <Row>
-                            <Col style={styles.gridbackground}>
+                            <Col style={styles.gridbackground}
+                                 onPress = {() => this.props.navigation.navigate('BloodStocks')}>
                                 <Text style={{marginTop:'50%',marginLeft:10,color:'white',fontSize:30}}>Blood Stocks</Text>
                             </Col>
                             <Col style={styles.gridbackground}
